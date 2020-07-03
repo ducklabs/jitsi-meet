@@ -1,3 +1,14 @@
+# Ducklabs fork for FabAssistant
+Install Steps to build android SDK
+
+These steps install the nessesary tools/libraries to run the build for the android SDK
+1. `npm install`
+2. `brew install jq`
+3. `brew install coreutils`
+4. In local.properties in the android folder change `sdk.dir = /Users/jonasross/Library/Android/sdk` to your path to your android sdk
+5. run `./android/scripts/release-sdk.sh /tmp/repo`
+
+
 # Jitsi Meet - Secure, Simple and Scalable Video Conferences
 
 Jitsi Meet is an open-source (Apache) WebRTC JavaScript application that uses [Jitsi Videobridge](https://jitsi.org/videobridge) to provide high quality, [secure](https://jitsi.org/security) and scalable video conferences. Jitsi Meet in action can be seen at [here at the session #482 of the VoIP Users Conference](http://youtu.be/7vFUVClsNh0).
