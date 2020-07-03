@@ -5,7 +5,7 @@ These steps install the nessesary tools/libraries to run the build for the andro
 1. `npm install`
 2. `brew install jq`
 3. `brew install coreutils`
-4. In local.properties in the android folder change `sdk.dir = /Users/jonasross/Library/Android/sdk` to your path to your android sdk
+4. In the android folder create a file local.properties and add `sdk.dir = /Users/jonasross/Library/Android/sdk` Change the path to your android sdk
 5. run `./android/scripts/release-sdk.sh /tmp/repo`
 
 
