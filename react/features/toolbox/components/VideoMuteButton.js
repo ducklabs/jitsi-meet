@@ -1,5 +1,7 @@
 // @flow
 
+import { DeviceEventEmitter } from 'react-native'
+
 import UIEvents from '../../../../service/UI/UIEvents';
 import {
     ACTION_SHORTCUT_TRIGGERED,
@@ -83,6 +85,7 @@ class VideoMuteButton extends AbstractVideoMuteButton<Props, *> {
      * @returns {void}
      */
     componentDidMount() {
+        DeviceEventEmitter.addListener('toggleVideoMute', this._onKeyboardShortcut);
         typeof APP === 'undefined'
             || APP.keyboardshortcut.registerShortcut(
                 'V',

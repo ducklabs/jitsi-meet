@@ -148,6 +148,13 @@ public class JitsiMeetView extends BaseReactView<JitsiMeetViewListener>
     }
 
     /**
+     * sends the toggle video mute command to enable/disable the camera.
+     */
+    public void toggleVideoMute() {
+        ReactInstanceManagerHolder.emitEvent("toggleVideoMute", null);
+    }
+    
+    /**
      * Leaves the currently active conference.
      */
     public void leave() {
